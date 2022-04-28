@@ -6,17 +6,17 @@
 
 struct KISI
 {
-    char* isim;
+    char *isim;
     double paraMiktari;
     double yatirmaMiktari;
     int sansliSayi;
 
-    void (*delete_Kisi) (struct KISI*);
+    void (*delete_Kisi)(struct KISI *);
 };
 
-typedef struct KISI* Kisi;
+typedef struct KISI *Kisi;
 
-Kisi new_Kisi(char*,double,double,int);
+Kisi new_Kisi(char *, double, double, int);
 void delete_Kisi(const Kisi);
 
 #endif

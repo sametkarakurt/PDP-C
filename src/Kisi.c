@@ -1,6 +1,7 @@
 #include "Kisi.h"
 
-Kisi new_Kisi(char* isim,double paraMiktari,double yatirmaMiktari,int sansliSayi){
+Kisi new_Kisi(char *isim, double paraMiktari, double yatirmaMiktari, int sansliSayi)
+{
     Kisi this;
     this = (Kisi)malloc(sizeof(struct KISI));
     this->isim = isim;
@@ -12,7 +13,9 @@ Kisi new_Kisi(char* isim,double paraMiktari,double yatirmaMiktari,int sansliSayi
     return this;
 }
 
-void delete_Kisi(const Kisi this){
-    if(this== NULL) return;
+void delete_Kisi(const Kisi this)
+{
+    if (this == NULL)
+        return;
     free(this);
 }
